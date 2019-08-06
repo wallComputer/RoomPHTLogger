@@ -1,0 +1,34 @@
+{
+    "MQTTConnections": {
+        "QOS": 0,
+        "brokerID": "BrokerID",
+        "clientName": "IndoorRaspberryPi",
+        "port": 2045
+    },
+    "MQTTTopics": {
+        "IncomingTopics": {
+            "ControllerPiCalled": "ControllerPiCalledForData",
+            "GetSensorDataTopic": "IndoorSensorBMP280SensorData",
+            "SetSpeedTopic": "SetSpeedTopic"
+        },
+        "OutgoingTopics": {
+            "DemandSensorDataTopic": "IndoorSensorBMP280SendDataNow",
+            "SendCollectedDataTopic": "IndoorRaspberryPiSensorData"
+        }
+    },
+    "RaspberryPiDetails": {
+        "ID": "InsidePi",
+        "Micro": "PHOTON",
+        "Sensor": "BMP280"
+    },
+    "SaveDataDetails": {
+        "CommonFileName": "SensorData",
+        "CurrentDataFile": "CollectorWork/CollectedDataFolder/SensorData_1540276766.txt",
+        "FileDataLimit": 500,
+        "SavedSensorDataLocation": "CollectorWork/CollectedDataFolder/"
+    },
+    "WiFiConnections": {
+        "pswd": "YourSSIDNetworkPassword",
+        "ssid": "YourSSID"
+    }
+}
